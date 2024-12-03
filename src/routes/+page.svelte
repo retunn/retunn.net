@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+  import { formatDate } from '$lib/utils';
+  import * as config from '$lib/config';
+
+</script>
+
+<svelte:head>
+  <title>{config.title}</title>
+</svelte:head>
+
+<h1>Index</h1>
+
+<p>Here you can find my projects and logs.</p>
